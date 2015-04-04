@@ -4,7 +4,7 @@ var path = require('path');
 var reload = require('browser-sync').reload;
 var config = path.join(process.cwd(), 'acetate.conf.js');
 
-gulp.task('acetate:watch', function () {
+gulp.task('acetate:watch', ['clean'], function () {
   var site = acetate({
     config: config,
     watcher: true
@@ -13,7 +13,7 @@ gulp.task('acetate:watch', function () {
   site.on('build', reload);
 });
 
-gulp.task('acetate:build', function (callback) {
+gulp.task('acetate:build', ['clean'], function (callback) {
   acetate({
     config: config
   }, callback);
