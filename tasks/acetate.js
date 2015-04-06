@@ -13,7 +13,7 @@ gulp.task('acetate:watch', ['clean'], function () {
   site.on('build', reload);
 });
 
-gulp.task('acetate:build', ['clean'], function (callback) {
+gulp.task('acetate:build', function (callback) {
   acetate({
     config: config
   }, callback);

@@ -6,7 +6,7 @@ var reload = require('browser-sync').reload;
 var filter = require('gulp-filter');
 
 gulp.task('sass', function () {
-  gulp.src('src/css/**/*.scss')
+  return gulp.src('src/css/**/*.scss')
       .pipe(sass({errLogToConsole: true}))
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(autoprefixer('last 2 versions'))

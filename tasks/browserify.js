@@ -34,8 +34,7 @@ function build(b){
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/js/'))
     .pipe(reload({stream:true}));
-
-};
+}
 
 gulp.task('browserify', ['clean'], function () {
   return build(create());
