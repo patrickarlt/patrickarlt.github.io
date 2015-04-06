@@ -31,7 +31,7 @@ particlesJS('particles', {
     },
     anim: {
       enable: true,
-      speed: .65
+      speed: .35
     }
   },
   interactivity: {
