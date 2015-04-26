@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/patrickarlt/personal-website",
   "devDependencies": {
-    "acetate": "0.0.20",
+    "acetate": "0.2.0",
     "autoprefixer": "^5.1.0",
     "babelify": "^5.0.4",
     "browser-sync": "^2.3.1",

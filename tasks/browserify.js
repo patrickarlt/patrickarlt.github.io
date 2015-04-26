@@ -11,7 +11,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
 var assign = require('lodash.assign');
 var reload = require('browser-sync').reload;
-var reload = require('browser-sync').reload;
 
 function create(options){
   options = assign({

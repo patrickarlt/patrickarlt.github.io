@@ -1,20 +1,18 @@
 var acetate = require('acetate');
 var gulp = require('gulp');
-var path = require('path');
 var reload = require('browser-sync').reload;
-var config = path.join(process.cwd(), 'acetate.conf.js');
 
 gulp.task('acetate:watch', ['clean'], function () {
   var site = acetate({
-    config: config,
+    dest: 'dist',
     watcher: true
   });
 
   site.on('build', reload);
 });
 
-gulp.task('acetate:build', function (callback) {
+gulp.task('acetate:build', function () {
   acetate({
-    config: config
-  }, callback);
+    dest: 'dist'
+  });
 });
