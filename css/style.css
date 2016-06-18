@@ -6,25 +6,15 @@ html, body {
   height: 100%;
   margin: 0;
   font-size: 16px;
-  font-family: 'ff-meta-web-pro', sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  font-family: 'ff-meta-web-pro', sans-serif; }
 
 body {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   overflow: hidden; }
 
 #particles {
@@ -56,7 +46,7 @@ h3, h4, h5, h6 {
   letter-spacing: .1rem; }
 
 h1 {
-  font-size: 7.21406rem; }
+  font-size: 7.59375rem; }
   @media (max-width: 600px) {
     h1 {
       font-size: 3.375rem;
@@ -65,7 +55,7 @@ h1 {
       font-weight: 400; } }
 
 h3 {
-  font-size: 3.20625rem;
+  font-size: 3.375rem;
   line-height: 3rem; }
   @media (max-width: 600px) {
     h3 {
@@ -74,12 +64,12 @@ h3 {
       font-weight: 400; } }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2.1375rem;
+  line-height: 2.25rem;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
   @media (max-width: 600px) {
     p {
-      font-size: 1.425rem;
-      line-height: 1.5rem; } }
+      font-size: 1.5rem; } }
 
 a {
   color: #20CCA8;
