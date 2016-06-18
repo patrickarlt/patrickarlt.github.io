@@ -1,18 +1,19 @@
-var acetate = require('acetate');
+var Acetate = require('acetate');
+var server = require('acetate/lib/modes/server');
 var gulp = require('gulp');
-var reload = require('browser-sync').reload;
 
-gulp.task('acetate:watch', ['clean'], function () {
-  var site = acetate({
-    dest: 'dist',
-    watcher: true
+gulp.task('acetate:server',function (callback) {
+  var acetate = new Acetate({
+    outDir: 'dist'
   });
-
-  site.on('build', reload);
+  server(acetate);
 });
 
 gulp.task('acetate:build', function () {
+  var acetate = new Acetate({
+    outDir: 'dist'
+  });
   acetate({
-    dest: 'dist'
+    outDir: 'dist'
   });
 });

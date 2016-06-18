@@ -1,8 +1,8 @@
-import "./lib/particles.js";
+require("./lib/particles.js");
 
 particlesJS('particles', {
   particles: {
-    color: '#576F72',
+    color: '#334449',
     color_random: false,
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: {
