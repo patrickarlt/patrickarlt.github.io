@@ -1,19 +1,18 @@
 var Acetate = require('acetate');
 var server = require('acetate/lib/modes/server');
+var builder = require('acetate/lib/modes/builder');
 var gulp = require('gulp');
 
-gulp.task('acetate:server',function (callback) {
-  var acetate = new Acetate({
+function acetate () {
+  return new Acetate({
     outDir: 'dist'
   });
-  server(acetate);
+}
+
+gulp.task('acetate:server', function (callback) {
+  server(acetate());
 });
 
 gulp.task('acetate:build', function () {
-  var acetate = new Acetate({
-    outDir: 'dist'
-  });
-  acetate({
-    outDir: 'dist'
-  });
+  return builder(acetate());
 });
